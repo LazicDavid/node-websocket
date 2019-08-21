@@ -21,14 +21,21 @@ $ nvm use
 $ yarn
 ```
 
+## Local browser test
+Hosted on `localhost:3000/__test`
+
+## Heroku logs
+```bash
+$ heroku logs -a htc-spectrum --tail
+```
+
 
 ## Environment tasks
 
 | Environment | Command           | Description |
 | ----------- |:-----------------:| ----------- |
 | Local       | **yarn local** | Run WS server locally.
-| Development | **yarn dev**   | Run DEV build.
-| Production  | **yarn prod**  | Run PROD build.
+| Production  | **yarn build**  | Run PROD build.
 
 
 ## Browser
