@@ -7,5 +7,5 @@ config({
   path: resolve(__dirname, '../config/.env')
 });
 
-Api();
-Socket();
+Api().then(Socket);
+

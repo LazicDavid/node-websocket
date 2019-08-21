@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import Routes from './routes';
 
-export default () => {
+export default async () => {
 
   const app = express();
 
@@ -13,7 +13,5 @@ export default () => {
 
   Routes(app);
 
-  app.listen(process.env.PORT || 3000, () =>
-    console.log(`:: Running API :: port ${process.env.PORT_API}`)
-  );
+  return app;
 };
