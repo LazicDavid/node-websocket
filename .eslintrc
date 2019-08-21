@@ -1,0 +1,38 @@
+extends: [
+  eslint:recommended
+]
+
+parser:
+  babel-eslint
+
+settings:
+  ecmascript: 6
+
+globals:
+  process: true
+
+env:
+  es6: true
+  node: true
+
+rules:
+  indent: [2, 2, {
+      "MemberExpression": 1,
+      "flatTernaryExpressions": false,
+      "CallExpression": {"arguments": 1},
+      "ignoredNodes": ["ConditionalExpression"],
+      "ObjectExpression": 1,
+      "SwitchCase": 1
+    }
+  ]
+  comma-spacing: [2, { "before": false, "after": true } ]
+  jsx-quotes: [2, "prefer-double"]
+  space-before-function-paren: [2, "always"]
+  no-console: 0
+  no-useless-return: 2
+  no-unused-vars: [2, { "ignoreRestSiblings": true }]
+  no-multiple-empty-lines: [2, { max: 1 }]
+  no-mixed-spaces-and-tabs: 2
+  semi: [2, "always"]
+  space-in-parens: [2, "never"]
+
