@@ -37,7 +37,3 @@ $ heroku logs -a htc-spectrum --tail
 | Local       | **yarn local** | Run WS server locally.
 | Production  | **yarn build**  | Run PROD build.
 
-
-## Browser
-
-Access the page on http://aerion.local or http://localhost:8000
